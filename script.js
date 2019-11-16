@@ -26,7 +26,7 @@ function primero() {
 
 function search() {
 
-    let url = "http://api.giphy.com/v1/gifs/search?api_key=CoGMIvpPxYlGK6JvJDyJoqYksgDZ5kwG&limit=10&offset=" + add +"&q=" + encodeURI(conteudo);
+    let url = "https://api.giphy.com/v1/gifs/search?api_key=CoGMIvpPxYlGK6JvJDyJoqYksgDZ5kwG&limit=15&offset=" + add +"&q=" + encodeURI(conteudo);
 
     console.log(url);
     buscador.value = "";
@@ -52,8 +52,12 @@ function respuesta() {
         let img = document.createElement("img");
         img.src = item.images.original.url;
 
+        const fav = document.createElement("button")
+        
+
         contenedor.appendChild(img);
         contenedor.appendChild(mas);
+        contenedor.appendChild(fav);
 
         mas.addEventListener("click", search);
 
