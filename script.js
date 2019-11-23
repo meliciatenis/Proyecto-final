@@ -43,6 +43,7 @@ function trocar(atual){
     if (document.getElementById(atual.srcElement.id).dataClickado == false) {
         document.getElementById(atual.srcElement.id).dataClickado = true ;
         document.getElementById(atual.srcElement.id).src = "cor1.png" ;
+        base(atual.id) 
     }
     else {
         document.getElementById(atual.srcElement.id).dataClickado = false ;
@@ -80,3 +81,22 @@ function respuesta() {
     
     contenedor.removeChild(favFinal)
 };
+
+function base(atual) {
+console.log(atual)
+let item =  {
+    "id" : "",
+    "title" : "",
+    "url" : ""
+    }
+
+//    fetch("gifs" , {
+//         method:"post",
+//         headers:{"Accept": "application/json, text/plain, */*",
+//         "Content-Type" : "application/json"
+//         },
+
+//     body: JSON.stringify(item)
+//     }).then(res => res.json())
+//     .then(res => console.log(res));
+}
