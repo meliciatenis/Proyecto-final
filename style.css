@@ -1,0 +1,40 @@
+body {
+    background: #0F110C;
+}
+
+#busqueda {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 7em;
+    border: 1em;
+}
+
+#caja {
+    border: none;
+    padding: 15px 200px 15px 15px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 15px;
+    text-align: left;
+    
+}
+
+#boton{
+    border: none;
+    padding: 15px  15px;
+    border-radius: 0px 10px 10px 0px ;
+    background: #612940;
+    font-size: 15px;
+    color: white;
+
+}
+
+#boton:hover {
+    background: #9D6381;
+}
+
+#resultados {
+    justify-content: space-around;
+    margin-top: 3em;
+}
+
