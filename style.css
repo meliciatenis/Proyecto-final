@@ -1,5 +1,12 @@
 body {
-    background: #0F110C;
+   background: rgb(32, 32, 32) ;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Lobster','Calistoga', cursive;
+    color: rgb(158, 143, 241);
+    font-size: 100px;
 }
 
 #busqueda {
@@ -16,7 +23,7 @@ body {
     border-radius: 10px 0px 0px 10px;
     font-size: 15px;
     text-align: left;
-    
+
 }
 
 #boton{
@@ -34,7 +41,17 @@ body {
 }
 
 #resultados {
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 3em;
+    text-align: center;
+}
+
+#resultados img {
+justify-content: space-between;
+padding: 2px;
+}
+
+#more {
+   margin: 0px 100px 0 100px ;
 }
 
