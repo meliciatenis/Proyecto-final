@@ -56,6 +56,10 @@ padding: 2px;
 }
 
 @media (max-width: 600px) {
+    h1{
+        font-size: 60px;
+    }
+
   #caja { padding: initial;
     text-align: center;
     font-size: 100%;
