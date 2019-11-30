@@ -9,6 +9,15 @@ h1 {
     font-size: 100px;
 }
 
+h3 {
+    font-family: 'Inconsolata', Arial, Helvetica, sans-serif;
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+    max-width: 200px;
+    width: 100%;
+    margin : 0;
+}
+
 #busqueda {
     display: flex;
     justify-content: center;
@@ -49,8 +58,6 @@ h1 {
 
 #resultados img {
 justify-content: space-between;
-padding: 0 0 2em 3em;
-
 }
 
 #more {

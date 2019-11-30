@@ -62,28 +62,40 @@ function respuesta() {
     mas.id = "more";
 
     for (let item of resultados) {
-        let img = document.createElement("img");
-        img.src = item.images.fixed_width.url;
-        img.style.position = "relative"
 
-        let fav = document.createElement("img")
+        let caixa = document.createElement("div");
+        caixa.style.position = "relative";
+        caixa.style.display = "inline-block";
+        caixa.style.margin = "0 0 2em 3em"
+        caixa.style.padding = "0 0 0.5em 0 ";
+        caixa.style.backgroundColor = "rgb(143, 241, 220)";
+        let img = document.createElement("img");
+
+        let titulo = document.createElement("h3");
+        titulo.textContent = item.title;
+        
+        img.src = item.images.fixed_width.url;
+        img.style.position = "relative";
+
+        let fav = document.createElement("img");
         fav.style.position ="absolute";
+        fav.style.top = "3px";
+        fav.style.right = "3px";
         fav.style.padding = "0";
         fav.style.zIndex = "2";
         fav.src = "cor.png" ;
         fav.id = "cor_" + item.id; 
         
-        contenedor.appendChild(img);
+        contenedor.appendChild(caixa);
+        caixa.appendChild(img);
         contenedor.appendChild(mas);
-        contenedor.appendChild(fav);
+        caixa.appendChild(fav);
+        caixa.appendChild(titulo)
 
         mas.addEventListener("click", search);
         fav.addEventListener("click", trocar);
 
     }
-    let favFinal = document.querySelector("#resultados img:last-child")
-    
-    contenedor.removeChild(favFinal)
 };
 
 function base(atual) {
