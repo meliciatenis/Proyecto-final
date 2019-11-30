@@ -68,7 +68,7 @@ function respuesta() {
         caixa.style.display = "inline-block";
         caixa.style.margin = "0 0 2em 3em"
         caixa.style.padding = "0 0 0.5em 0 ";
-        caixa.style.backgroundColor = "rgb(143, 241, 220)";
+        caixa.style.backgroundColor = "#612940";
         let img = document.createElement("img");
 
         let titulo = document.createElement("h3");
