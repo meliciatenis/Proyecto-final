@@ -4,8 +4,8 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Lobster','Calistoga', cursive;
-    color: rgb(158, 143, 241);
+    font-family: 'Righteous', cursive;
+    color: rgb(143, 241, 220);
     font-size: 100px;
 }
 
@@ -43,12 +43,13 @@ h1 {
 #resultados {
     justify-content: center;
     margin-top: 3em;
+    margin-right: 2em;
     text-align: center;
 }
 
 #resultados img {
 justify-content: space-between;
-padding: 2px;
+padding: 0 0 0 3em;
 }
 
 #more {

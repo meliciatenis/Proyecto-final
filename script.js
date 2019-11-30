@@ -64,9 +64,13 @@ function respuesta() {
     for (let item of resultados) {
         let img = document.createElement("img");
         img.src = item.images.fixed_width.url;
+        img.style.position = "relative"
 
         let fav = document.createElement("img")
-        fav.src = "cor.png" 
+        fav.style.position ="absolute";
+        fav.style.padding = "0";
+        fav.style.zIndex = "2";
+        fav.src = "cor.png" ;
         fav.id = "cor_" + item.id; 
         
         contenedor.appendChild(img);
